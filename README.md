@@ -17,7 +17,7 @@ A repo-native AI tutor that grows with the student. It remembers every question,
 ## Deploy
 
 ```bash
-git clone https://github.com/Lucineer/tutor-ai.git
+git clone ./.git
 cd tutor-ai
 npm install
 npx wrangler dev
@@ -34,3 +34,7 @@ After 100 sessions, Tutor AI knows:
 No traditional tutor can compete with accumulated context. Time is the competitive advantage.
 
 Author: Superinstance
+
+## License
+
+MIT — Built with ❤️ by [Superinstance](https://github.com/superinstance) & [Lucineer](https://github.com/Lucineer) (DiGennaro et al.)

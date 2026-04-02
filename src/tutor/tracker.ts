@@ -694,7 +694,7 @@ export class LearningInsights {
       for (let j = i + 1; j < topics.length; j++) {
         const shared = topicMistakes[topics[i]].filter(m1 =>
           topicMistakes[topics[j]].some(m2 =>
-            m1.misconception.toLowerCase().includes(m2.misconception.toLowerCase().split(' ').slice(0, 3).join(' '))
+            m1.misconception.toLowerCase().includes(m2.misconception.toLowerCase().split(' ').slice(0, 3)        ).join(' '))
         );
         if (shared.length >= 2) {
           confusedPairs.push([topics[i], topics[j]]);
