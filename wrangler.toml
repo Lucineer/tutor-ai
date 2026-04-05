@@ -1,10 +1,8 @@
+account_id = "049ff5e84ecf636b53b162cbb580aae6"
 name = "tutor-ai"
-main = "src/index.ts"
-compatibility_date = "2024-12-01"
-
-[vars]
-DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
+main = "src/worker.ts"
+compatibility_date = "2024-01-01"
 
 [[kv_namespaces]]
-binding = "TUTOR_KV"
-id = "your-kv-namespace-id"
+binding = "STATE"
+id = "b23e556ca946408dafbbe45dbb08b696"
