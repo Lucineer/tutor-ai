@@ -1,0 +1,39 @@
+{
+  "name": "tutor-ai",
+  "displayName": "Tutor.ai",
+  "version": "1.0.0",
+  "type": "cocapn-vessel",
+  "description": "Tutor.ai",
+  "icon": "\ud83c\udf93",
+  "color": "#a855f7",
+  "category": "education",
+  "capabilities": [
+    "chat",
+    "tutoring"
+  ],
+  "secrets": {
+    "DEEPSEEK_API_KEY": {
+      "required": false,
+      "hint": "https://platform.deepseek.com/api_keys"
+    },
+    "DEEPINFRA_API_KEY": {
+      "required": false,
+      "hint": "https://deepinfra.com/dashboard/keys"
+    },
+    "SILICONFLOW_API_KEY": {
+      "required": false,
+      "hint": "https://cloud.siliconflow.cn"
+    }
+  },
+  "endpoints": {
+    "health": "/health"
+  },
+  "deployment": {
+    "platform": "cloudflare-workers",
+    "minPlan": "free"
+  },
+  "local": {
+    "supported": true,
+    "port": 8787
+  }
+}
